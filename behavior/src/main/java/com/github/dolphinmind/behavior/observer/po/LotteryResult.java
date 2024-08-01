@@ -1,6 +1,7 @@
 package com.github.dolphinmind.behavior.observer.po;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
@@ -12,6 +13,7 @@ import java.util.Date;
  */
 
 @Data
+@NoArgsConstructor
 public class LotteryResult {
     // 用户ID
     private String uId;
@@ -19,6 +21,7 @@ public class LotteryResult {
     private String msg;
     // 业务时间
     private Date dateTime;
+
 
     public LotteryResult(String uId, String msg, Date dateTime) {
         this.uId = uId;
