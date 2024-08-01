@@ -12,6 +12,7 @@
         <module>creator</module>
         <module>structure</module>
         <module>behavior</module>
+        <module>principle</module>
     </modules>
 
     <properties>
