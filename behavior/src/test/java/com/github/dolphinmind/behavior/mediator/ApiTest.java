@@ -35,7 +35,7 @@ public class ApiTest {
             SqlSession session = sqlMapper.openSession();
 
             try {
-                Award award = session.selectOne("com.github.dolphinmind.dao.IAward.queryAwardInfoByAwardId", "101");
+                Award award = session.selectOne("com.github.dolphinmind.behavior.mediator.dao.IAward.queryAwardInfoByAwardId");
                 logger.info("测试结果：{}", JSON.toJSONString(award));
             } finally {
                 session.close();

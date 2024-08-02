@@ -11,6 +11,6 @@ import com.github.dolphinmind.behavior.mediator.po.Award;
 
 public interface IAward {
 
-    Award queryAwardInfoByAwardId(Long awardId);
+    Award queryAwardInfoByAwardId(Integer awardId);
 
 }

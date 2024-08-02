@@ -43,8 +43,12 @@ public class SqlSessionFactoryBuilder {
             // 为了包装在不联网的时候一样可以解析XML，否则会需要从互联网获取dtd文件
             saxReader.setEntityResolver(new XMLMapperEntityResolver());
             Document document = saxReader.read(new InputSource(reader));
+
+            // TODO parseConfiguration
             Configuration configuration = parseConfiguration(document.getRootElement());
+
             return new DefaultSqlSessionFactory(configuration);
+
         } catch (DocumentException e) {
             e.printStackTrace();
         }
@@ -60,9 +64,14 @@ public class SqlSessionFactoryBuilder {
      */
     private Configuration parseConfiguration(Element root) {
         Configuration configuration = new Configuration();
+
+        // 设置数据源
         configuration.setDataSource(dataSource(root.selectNodes("//dataSource")));
+        // 设置数据库连接
         configuration.setConnection(connection(configuration.dataSource));
+        // 设置mappers
         configuration.setMapperElement(mapperElement(root.selectNodes("mappers")));
+
         return configuration;
     }
 
