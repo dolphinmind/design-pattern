@@ -15,7 +15,7 @@ import java.util.Date;
 public class Award {
 
     private Long id;
-    private Long award_id;
+    private String award_id;
     private String award_key;
     private String award_config;
     private String award_desc;

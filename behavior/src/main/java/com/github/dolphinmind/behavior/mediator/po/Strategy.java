@@ -15,7 +15,7 @@ import java.util.Date;
 public class Strategy {
 
     private Long id;
-    private Long strategy_id;
+    private String strategy_id;
     private String strategy_desc;
     private String rule_models;
     private Date create_time;
