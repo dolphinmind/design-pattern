@@ -12,9 +12,9 @@ import java.util.Map;
 
 public class Configuration {
 
-    protected Connection connection;
-    protected Map<String, String> dataSource;
-    protected Map<String, XNode> mapperElement;
+    public Connection connection;
+    public Map<String, String> dataSource;
+    public Map<String, XNode> mapperElement;
 
     public void setConnection(Connection connection) {
         this.connection = connection;
