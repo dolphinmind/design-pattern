@@ -12,7 +12,7 @@ import java.util.*;
 /**
  * @author dolphinmind
  * @ClassName DefaultSqlSession
- * @description
+ * @description 包装JDBC层，通过这种方式可以让对数据库的JDBC操作隐藏起来，外部调用的时候对入参、出参都由内部进行处理
  * @date 2024/8/2
  */
 
