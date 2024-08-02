@@ -1,4 +1,4 @@
-package com.github.dolphinmind.behavior.mediator.mediator;
+package com.github.dolphinmind.behavior.mediator.mediator.support;
 
 import java.util.Map;
 
