@@ -1,7 +1,7 @@
 package com.github.dolphinmind.behavior.mediator.mediator.impl;
 
 import com.github.dolphinmind.behavior.mediator.mediator.SqlSession;
-import com.github.dolphinmind.behavior.mediator.mediator.XNode;
+import com.github.dolphinmind.behavior.mediator.mediator.support.XNode;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
