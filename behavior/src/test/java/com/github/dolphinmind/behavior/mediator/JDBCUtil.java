@@ -11,7 +11,7 @@ import java.sql.Statement;
 /**
  * @author dolphinmind
  * @ClassName JDBCUtil
- * @description
+ * @description JDBC方式直接操作数据库
  * @date 2024/8/2
  */
 
