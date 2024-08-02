@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.dolphinmind.behavior.mediator.dao.IStrategy">
+    <select id="queryStrategyInfoByStrategyId" resultType="com.github.dolphinmind.behavior.mediator.po.Strategy">
+        SELECT *
+        FROM strategy
+        WHERE strategy_id = #{strategy_id}
+    </select>
+</mapper>
